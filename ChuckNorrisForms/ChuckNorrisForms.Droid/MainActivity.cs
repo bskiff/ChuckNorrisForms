@@ -1,22 +1,19 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using OxyPlot.Xamarin.Forms.Platform.Android;
+using Xamarin.Forms.Platform.Android;
 
 namespace ChuckNorrisForms.Droid
 {
-    [Activity(Label = "ChuckNorrisForms", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
+    [Activity(Label = "ChuckNorrisForms", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.Orientation)]
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+            Forms.Init();
+            Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
     }
