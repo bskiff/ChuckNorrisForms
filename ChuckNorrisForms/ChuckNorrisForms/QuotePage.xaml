@@ -6,7 +6,7 @@
              Title="Quote Page">
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <Label Text="Welcome to Chuck Norris Quotes" VerticalOptions="StartAndExpand" HorizontalOptions="Center" TextColor="Black" />
-    <Image Source="chuck-norris.jpg" HorizontalOptions="Center"/>
+    <Image Source="chucknorris.jpg" HorizontalOptions="Center"/>
     <Label Text="{Binding Path=CurrentQuote}" HorizontalOptions="Center"/>
     <Button Text="Next Quote" HorizontalOptions="Center" Clicked="Button_OnClicked"/>
   </StackLayout>

@@ -1,5 +1,4 @@
 ﻿using System;
-using ChuckNorris;
 using Xamarin.Forms;
 
 namespace ChuckNorrisForms

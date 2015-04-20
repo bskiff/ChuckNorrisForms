@@ -1,19 +1,19 @@
 ﻿using System;
 using System.ComponentModel;
-using ChuckNorris;
+using ChuckNorrisQuotes;
 
 namespace ChuckNorrisForms
 {
     class QuoteViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private readonly ChuckNorrisQuotes _chuckNorrisQuotes = new ChuckNorrisQuotes();
+        private readonly ChuckNorrisQuoter _chuckNorrisQuoter = new ChuckNorrisQuoter();
 
         private String _currentQuote;
 
         public void NextQuote()
         {
-            CurrentQuote = _chuckNorrisQuotes.GetNextQuote();
+            CurrentQuote = _chuckNorrisQuoter.GetNextQuote();
         }
 
         public String CurrentQuote
